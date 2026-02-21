@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Table Tennis Tracker</title>
+  <title>StatTrack</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Bebas+Neue&display=swap" rel="stylesheet" />
@@ -566,8 +566,8 @@
         <div className="app">
           {showConfig && <ConfigModal cfg={cfg} onSave={handleSaveConfig} onClose={() => setShowConfig(false)} />}
           <header className="header">
-            <h1>Table Tennis</h1>
-            <div className="subtitle">Score Tracker</div>
+            <h1>StatTrack</h1>
+            <div className="subtitle">Table Tennis</div>
             <div className="header-actions">
               <button className="btn sm" onClick={() => setShowConfig(true)}>⚙ GitHub</button>
               {hasGH && <button className="btn sm" onClick={() => syncFromGitHub()}>↻ Sync</button>}
